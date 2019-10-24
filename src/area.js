@@ -5,7 +5,6 @@ const b = readlineSync.question("Length: ");
 const c = a * 25.4
 const d = b * 25.4
 const e = c * d
-const f = e.toFixed(2);
-let Final = f.toLocaleString();
+const f = e.toLocaleString ("en", {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 console.log("A(n) " + a + "-by-" + b + "-inch sheet of paper has an area of " + f + " square millimeter(s).")
